@@ -1,0 +1,49 @@
+{
+  "name": "react-gifts",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel public/index.html",
+    "lint": "eslint src/**/*js test/**/*.js",
+    "unit": "jest test",
+    "e2e": "cypress open"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.1.0",
+    "cypress": "^3.1.5",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
+    "eslint": "^5.15.0",
+    "eslint-config-codingitwrong": "^0.1.4",
+    "eslint-plugin-jest": "^22.3.0",
+    "eslint-plugin-react": "^7.12.4",
+    "jest": "^24.1.0",
+    "jest-cli": "24.1.0",
+    "parcel-bundler": "^1.11.0",
+    "react-test-render": "^1.1.1",
+    "react-testing-library": "^6.0.0"
+  },
+  "dependencies": {
+    "react": "^16.8.3",
+    "react-bootstrap": "^1.0.0-beta.5",
+    "react-dom": "^16.8.3",
+    "react-router-dom": "^4.3.1"
+  },
+  "jest": {
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>test/setup.js"
+  },
+  "alias": {
+    "src": "./src"
+  }
+}
